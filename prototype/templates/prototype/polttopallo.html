@@ -6,6 +6,7 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,15 +46,57 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row align-items-center mt-5 card-body mb-1">
-            <h1 class="font-weight-light">Polttopallo</h1>
-            <p>Polttopallossa heitetään palloa. Se on kivaa.</p>
-            <div class="col-lg-5">
+        <div class="align-items-center mt-5 card-body">
+            <div class="row">
+                <h1 class="font-weight-light">Polttopallo</h1>
+            </div>
+            <div class="row">
+                <p>Polttopallo on hauska ja sähäkkä laji, jota on pelattu Suomessa liikuntatunneilla vuosikausia.
+                    Polttopallo ei vaadi erityisiä välineitä, ja sitä voi pelata joko yksilöinä tai joukkueessa.</p>
+            </div>
+            <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kNmuQoJVI5g"
                         allowfullscreen></iframe>
                 </div>
             </div>
+        </div>
+        <div class="row mb-0 text-center">
+            <div class="col">
+                <a href="#" data-toggle="popover" title="Osallistujat" data-content="Suositellaan 4-30 osallistujalle."
+                    data-trigger="focus" data-placement="bottom">
+                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" data-toggle="popover" title="Hinta" data-content="Peli on ilmainen!" data-trigger="focus"
+                    data-placement="bottom">
+                    <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" data-toggle="popover" title="Haastavuus" data-content="Peli sopii kaikille aloittelijasta ammattilaiseen!"
+                    data-trigger="focus" data-placement="bottom"><i class="fa fa-rocket fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <p>4-30</p>
+            </div>
+            <div class="col">
+                <p>$</p>
+            </div>
+            <div class="col">
+                +
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('[data-toggle="popover"]').popover();
+                });
+
+                $('.popover-dismiss').popover({
+                    trigger: 'focus'
+                });
+            </script>
         </div>
         <div class="row">
             <div class="col-md-4 mb-1">
@@ -85,9 +128,18 @@
                     </div>
                     <div class="collapse" id="collapseExample">
                         <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                            ea proident.
+                            <h3>Laajennetut säännöt</h3>
+                            <p>Yksi tai useampi pelaaja yrittää "polttaa" muita pelaajia osumalla pelaajiin
+                                heittämällään pallolla. Muut pelaajat asettuvat maahan piirretyn ympyrän sisäpuolelle
+                                ja yrittävät väistellä palloa. </p>
+                            <p> Kun pallo osuu ympyrän sisällä olevaan pelaajaan, hän siirtyy ympyrän ulkopuolelle ja
+                                hänestä tulee yksi heittäjistä. Peliä jatketaan, kunnes ympyrän sisällä ei ole enää
+                                pelaajia. Viimeinen sisällä oleva pelaaja on voittaja. Yleensä tapana on, että vain
+                                pään alapuolelle osuneet heitot hyväksytään. Pelistä on olemassa monimutkaisempia
+                                muunnelmia, kuten keinupolttopallo.</p>
+                            <p>Joissakin sääntömuunnelmissa ympyrän sisällä olevat pelaajat saavat ottaa pallosta kopin
+                                käsillään. Näin tehdessä viimeksi ympyrästä poistunut tai kopparin valitsema pelaaja
+                                saa palata ympyrään.</p>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -98,14 +150,14 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-    <footer class="py-3 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; SCI-projektikurssi kevät 2019</p>
+
         </div>
-    </footer>
+        <footer class="bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; SCI-projektikurssi kevät 2019</p>
+            </div>
+        </footer>
 </body>
 
 </html>
