@@ -25,7 +25,7 @@ SECRET_KEY = 'jmg6%6)1#3_-xl!8b*ezf$p-#vn=@1r3f5e^!4$9!^r6=)d%(1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', 'https://movesandgames.herokuapp.com/']
 
 
 # Application definition
