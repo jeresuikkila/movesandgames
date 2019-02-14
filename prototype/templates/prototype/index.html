@@ -1,44 +1,94 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-{% load static %}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-
-<link rel="stylesheet" type="text/css" href="{% static 'prototype/css/style.css' %}">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<title>Moves and games prototype</title>
-
+    <title>Liikunta-app</title>
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <div class="row game">
-            <h3>Polttopallo</h3>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Liikunta-app</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Etusivu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Etsi laji
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Oma sivu</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row game">
-            <h3>10 tikkua laudalla</h3>
-        </div>
-        <div class="row game">
-            <h3>hippa</h3>
-        </div>
-        <div class="row game">
-            <h3>piilonen</h3>
-        </div>
-        <div class="row game">
-            <h3>kukkulan kuningas</h3>
+    </nav>
+    <div class="align-items-center mt-5">
+        <div class="card" style="border-radius: 0px;">
+            <img class="card-img" src="../../static/prototype/img/1.jpg" alt="Card image">
         </div>
     </div>
+    <section class="pt-3">
+        <div class="container">
+            <h2>Tervetuloa liikkumaan!</h2>
+            <p class="mb-0">Löydä lempilajisi helposti ja nopeasti!</p>
+            <button type="button" class="btn btn-primary mt-2">
+                Lajihakuun <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-1">
+                <hr>
+                <h2>Suosituimmat lajit:</h2>
+                <div class="card mb-3">
+                    <img class="card-img-top" src="../../static/prototype/img/polttopallo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Polttopallo</h5>
+                        <p class="card-text">Polttopallo on hauska ja sähäkkä laji, joka ei vaadi erityisiä välineitä. Polttopalloa voi pelata joko yksilöinä tai joukkueessa.</p>
+                        <a href="http://movesandgames.herokuapp.com/polttopallo/" class="btn btn-primary">Mene lajisivulle</a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img class="card-img-top" src="../../static/prototype/img/1279418.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lipunryöstö</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Kuka tätä anyway edes lukee?</p>
+                        <a href="http://movesandgames.herokuapp.com/polttopallo/" class="btn btn-primary">Mene lajisivulle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <footer class="bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; SCI-projektikurssi kevät 2019</p>
+            </div>
+        </footer>
 </body>
+
 </html>
